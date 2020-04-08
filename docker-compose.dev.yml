@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+    primerust:
+        container_name: primerust
+        build:
+            context: .
+            args:
+                OXIDE_RUST_VERSION: 2.0.4531
+                PASS: qwerty123
+        ports:
+            - 28016:28016
